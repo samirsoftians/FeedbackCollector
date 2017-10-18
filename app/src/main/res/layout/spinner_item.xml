@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@android:id/text1"
+        android:textSize="19sp"
+        android:scrollIndicators="right"
+        android:text="fdfvyuhbn"
+        android:drawableLeft="@drawable/bname"
+        android:singleLine="true"
+        android:hint="Choose an Option"
+        android:textColor="#111"
+        android:padding="15dp"/>
+    

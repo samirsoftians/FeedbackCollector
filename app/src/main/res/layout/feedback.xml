@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#313C52">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Feedback"
+            android:textSize="25dp"
+            android:textColor="#f9fafa"
+            android:layout_marginTop="8dp"
+            android:id="@+id/textView2"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Customer Name"
+            android:drawableLeft="@drawable/name"
+            android:textColorHint="#0e0e0e"/>
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Email (optional)"
+            android:drawableLeft="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#0e0e0e"/>
+        <EditText
+            android:id="@+id/ContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:hint="Contact No"
+            android:maxLength="10"
+            android:drawableLeft="@drawable/phone"
+            android:inputType="phone"
+            android:textColorHint="#0e0e0e"/>
+
+        <EditText
+            android:id="@+id/EditTextFeedbackBody"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:hint="Feedback Details"
+            android:inputType="textMultiLine"
+            android:drawableLeft="@drawable/feedback"
+            android:background="@drawable/edittextstyle"
+            android:lines="5"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#0e0e0e">
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/happy"
+                android:src="@drawable/happy"
+                android:scaleType=""/>fitCenter"
+                android:background="@drawable/circle
+
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/sad"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sa"
+                android:scaleType="fitCenter"
+                android:textColor="#123"
+                android:background="@drawable/circle"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Send Feedback"
+            android:textAllCaps="false"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/colorbutton"
+            android:textColor="#0e0e0e"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+    </ScrollView>

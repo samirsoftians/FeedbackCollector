@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="#313C52">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#313C52"
+        app:titleTextColor="#fcfafa"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:id="@+id/ll1">
+
+    <Button
+
+            android:id="@+id/btnVisiter"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:drawableTop="@drawable/takefeedback"
+            android:layout_margin="4dp"
+            android:text="Take Feedback"
+            android:textAllCaps="false"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/colorbutton"
+            android:textColor="#0e0e0e" />
+        <Button
+            android:id="@+id/btnshow"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="View Feedback"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/viewfeedback"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/colorbutton"
+            android:textColor="#0e0e0e"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:textAllCaps="false"
+            android:text="Update"
+            android:drawableTop="@drawable/update"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/colorbutton"
+            android:textColor="#0e0e0e"
+            />
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/logout"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/colorbutton"
+            android:textColor="#0e0e0e"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+    </ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#313C52"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <EditText
+        android:id="@+id/etComments"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:drawableLeft="@drawable/feedback"
+        android:background="@drawable/edittextstyle"
+        android:hint="Type your text"
+        android:inputType="textCapSentences"
+        android:textColorHint="#0e0e0e"
+        android:lines="5"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:layout_weight="0.29" />
+
+</LinearLayout>
